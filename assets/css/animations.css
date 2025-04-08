@@ -1,0 +1,93 @@
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Entrance Animations */
+.section-entrance {
+    animation: slideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Hover Effects */
+.feature-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: perspective(1000px) rotateX(0) scale(1);
+}
+
+.feature-card:hover {
+    transform: perspective(1000px) rotateX(5deg) scale(1.03);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Staggered Animations */
+[data-animation-delay="100"] {
+    animation-delay: 0.1s;
+}
+
+[data-animation-delay="200"] {
+    animation-delay: 0.2s;
+}
+
+[data-animation-delay="300"] {
+    animation-delay: 0.3s;
+}
+
+[data-animation-delay="400"] {
+    animation-delay: 0.4s;
+}
+
+[data-animation-delay="500"] {
+    animation-delay: 0.5s;
+}
+
+/* Button Animation */
+.btn-cta {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cta:active {
+    transform: translateY(-1px);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse:hover {
+    animation: pulse 1.5s infinite;
+}

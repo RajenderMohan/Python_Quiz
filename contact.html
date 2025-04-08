@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Python Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/social-media.css">
+</head>
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Python Quiz Home">
+                <i class="fab fa-python me-2" style="font-size: 1.5rem;"></i>
+                <span class="fw-bold">Python Quiz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 position-relative" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                                <span class="visually-hidden">Current page</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="quiz.html">
+                            <i class="fas fa-play me-1"></i> Start Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="features.html">
+                            <i class="fas fa-star me-1"></i> Features
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact" class="py-5 bg-gradient-primary">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-white">Get In Touch</h2>
+                <p class="lead text-white-50">We'd love to hear from you! Choose your preferred contact method</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card shadow-lg h-100">
+                        <div class="card-body p-5">
+                            <h3 class="card-title text-center mb-4"><i class="fas fa-envelope me-2"></i>Send Us a Message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control form-control-lg" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-lg h-100">
+                        <div class="card-body p-5">
+                            <h3 class="card-title text-center mb-4"><i class="fas fa-phone-alt me-2"></i>Contact Options</h3>
+                            <div class="platform-card email-card" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=rajendramohan7800@gmail.com', '_blank')">
+                                <div class="platform-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="platform-content">
+                                    <h4>Email Support</h4>
+                                    <p>rajendramohan7800@gmail.com</p>
+                                    <div class="platform-hover">
+                                        <span>Click to email us</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="platform-card whatsapp-card" onclick="window.open('https://wa.me/7348619567', '_blank')">
+                                <div class="platform-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="platform-content">
+                                    <h4>WhatsApp Chat</h4>
+                                    <p>+91 734-861-9567</p>
+                                    <div class="platform-hover">
+                                        <span>Start chatting</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="platform-card phone-card" onclick="window.open('tel:+91 7348619567', '_blank')">
+                                <div class="platform-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="platform-content">
+                                    <h4>Call Support</h4>
+                                    <p>+91 7348619567</p>
+                                    <div class="platform-hover">
+                                        <span>Tap to call</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <h4 class="mb-3">Or find us on social media</h4>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="https://www.facebook.com/profile.php?id=61558015500250" class="btn btn-outline-primary btn-icon rounded-circle">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://x.com/Rajendermv7800" class="btn btn-outline-info btn-icon rounded-circle">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/iamrajender9567/" class="btn btn-outline-danger btn-icon rounded-circle">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/rajender-mohan-verma-10418432a/" class="btn btn-outline-primary btn-icon rounded-circle">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vertical Social Media Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Connect With Us</h2>
+                <p class="lead text-muted">Follow us on social media for updates and support</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="social-media-grid">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@pythonquiz.com" class="social-icon email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://wa.me/7348619567" class="social-icon whatsapp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.instagram.com/iamrajender9567/" class="social-icon instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajender-mohan-verma-10418432a/" class="social-icon linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://t.me/+S5b31eTh48llMzJl" class="social-icon telegram" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://x.com/Rajendermv7800" class="social-icon x" title="X">
+                            <i class="fab fa-x"></i>
+                            <span>X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 position-relative">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">© 2025 Python Quiz. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://x.com/Rajendermv7800"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/RajenderMohan"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajender-mohan-verma-10418432a/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <button id="scrollToTop" class="btn btn-primary rounded-circle position-absolute end-0 bottom-0 m-3" style="width: 50px; height: 50px;">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/contact-new.js"></script>
+</body>
+</html>

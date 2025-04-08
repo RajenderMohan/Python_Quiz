@@ -1,0 +1,295 @@
+/* Main Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    transition: all 0.3s ease;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3.5rem;
+    background-color: var(--python-blue) !important;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 0.5rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: var(--python-yellow) !important;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 4rem !important;
+    padding-bottom: 5rem !important;
+    margin-top: 1.5rem;
+}
+
+/* Feature Cards */
+.feature-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhanced Platform Cards */
+.platform-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.platform-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.platform-content h4 {
+    color: var(--python-dark);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.platform-content p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.platform-hover {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    background: var(--python-blue);
+    color: white;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform-card:hover .platform-hover {
+    bottom: 0;
+}
+
+.platform-card:hover .platform-icon {
+    transform: scale(1.1);
+}
+
+/* Platform-specific colors */
+.email-card .platform-icon {
+    color: #D44638;
+}
+
+.whatsapp-card .platform-icon {
+    color: #25D366;
+}
+
+.phone-card .platform-icon {
+    color: #0A66C2;
+}
+
+.email-card .platform-hover {
+    background: #D44638;
+}
+
+.whatsapp-card .platform-hover {
+    background: #25D366;
+}
+
+.phone-card .platform-hover {
+    background: #0A66C2;
+}
+
+/* Contact Platforms Section */
+.contact-platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+
+.contact-platform {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+}
+
+.contact-platform:hover {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.4s ease;
+    transform: translateZ(20px);
+}
+
+/* Platform-specific styles */
+.contact-platform .fa-envelope {
+    color: #D44638;
+}
+
+.contact-platform .fa-whatsapp {
+    color: #25D366;
+}
+
+.contact-platform .fa-instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-platform .fa-facebook {
+    color: #1877F2;
+}
+
+.contact-platform .fa-linkedin {
+    color: #0A66C2;
+}
+
+.contact-platform .fa-telegram {
+    color: #26A5E4;
+}
+
+.contact-platform .fa-twitter {
+    color: #1DA1F2;
+}
+
+.contact-platform:hover .contact-icon {
+    transform: scale(1.2) translateZ(30px);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1) translateZ(30px);
+    }
+
+    100% {
+        transform: scale(1.3) translateZ(30px);
+    }
+}
+
+.contact-platform h3 {
+    color: var(--python-dark);
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-platform:hover h3 {
+    color: var(--python-blue);
+    transform: translateY(-3px);
+}
+
+.contact-platform p {
+    color: #666;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.contact-platform:hover p {
+    color: #444;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    padding: 2rem 0;
+    background-color: var(--python-dark);
+    color: white;
+}
+
+/* Python Brand Colors */
+:root {
+    --python-blue: #3776ab;
+    --python-yellow: #ffd43b;
+    --python-dark: #306998;
+    --python-light: #ffed99;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding: 1rem 0;
+    }
+
+    .feature-card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-platforms {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-platform {
+        padding: 1.5rem;
+    }
+
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+}

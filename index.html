@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Performance & Security Headers -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self';
+                   script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
+                   style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline';
+                   font-src https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+                   img-src 'self' data:;
+                   media-src 'self';
+                   connect-src 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <title>Python Quiz - Test Your Knowledge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/enhancements.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/social-media.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Python Quiz Home">
+                <i class="fab fa-python me-2" style="font-size: 1.5rem;"></i>
+                <span class="fw-bold">Python Quiz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 position-relative" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
+                                <span class="visually-hidden">Current page</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="quiz.html">
+                            <i class="fas fa-play me-1"></i> Start Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="features.html">
+                            <i class="fas fa-star me-1"></i> Features
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-5" style="background-color: var(--python-light);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4" style="color: var(--python-dark);">Python Programming Challenge</h1>
+                    <p class="lead mb-4" style="color: var(--python-dark);">Test your Python skills with our comprehensive 50-question assessment covering fundamentals to advanced concepts!</p>
+                    <div class="d-flex gap-3">
+                        <a href="quiz.html" class="btn btn-primary btn-lg px-4">
+                            <i class="fas fa-play me-2"></i>Begin Python Quiz
+                        </a>
+                        <a href="#features" class="btn btn-outline-primary btn-lg px-4" style="border-color: var(--python-dark); color: var(--python-dark);">
+                            <i class="fas fa-info-circle me-2"></i>Explore Features
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="code-snippet p-4 bg-white rounded shadow" style="border-left: 5px solid var(--python-blue);">
+                        <pre><code class="language-python"># Official Python Quiz
+def evaluate_skills():
+    questions = load_python_questions()
+    score = calculate_score(questions)
+    return f"Python Mastery: {score}/50"</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Why Take Our Python Quiz?</h2>
+                <p class="lead text-muted">Discover what makes our quiz the best way to test and improve your Python skills</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card shadow-sm h-100">
+                        <div class="icon-box bg-primary-gradient">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h3 class="mt-3">Comprehensive Coverage</h3>
+                        <p class="text-muted">50 carefully crafted questions covering Python fundamentals, OOP concepts, data structures, algorithms, and advanced topics</p>
+                        <div class="badge bg-primary bg-opacity-10 text-primary">Updated Weekly</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card shadow-sm h-100">
+                        <div class="icon-box bg-success-gradient">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                        <h3 class="mt-3">Timed Challenge</h3>
+                        <p class="text-muted">30-second timer per question to simulate real-world coding interview pressure and improve your quick thinking</p>
+                        <div class="badge bg-success bg-opacity-10 text-success">Skill Builder</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card shadow-sm h-100">
+                        <div class="icon-box bg-info-gradient">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="mt-3">Detailed Analytics</h3>
+                        <p class="text-muted">Get comprehensive feedback with score breakdowns, time analysis, and personalized improvement suggestions</p>
+                        <div class="badge bg-info bg-opacity-10 text-info">Actionable Insights</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://www.geeksforgeeks.org/python-programming-language-tutorial/" class="btn btn-primary btn-lg px-4">
+                    <i class="fas fa-rocket me-2"></i>Start Learning Python Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 shadow-sm">
+                        <div class="rating mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"This quiz helped me land my Python developer job! The questions are exactly what interviewers ask."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Sarah K.</h6>
+                                <small class="text-muted">Python Developer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 shadow-sm">
+                        <div class="rating mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-4">"The detailed analytics helped me identify my weak areas. My Python skills improved dramatically in just 2 weeks!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Michael T.</h6>
+                                <small class="text-muted">Data Scientist</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card p-4 shadow-sm">
+                        <div class="rating mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"Perfect for interview preparation. The timed challenges really helped me think faster under pressure."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Priya M.</h6>
+                                <small class="text-muted">Full Stack Developer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary px-4">
+                    <i class="fas fa-plus-circle me-2"></i>Share Your Experience
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Connect With Us</h2>
+                <p class="lead text-muted">Follow us on social media for updates and support</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="social-media-grid">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajendramohan7800@gmail.com" class="social-icon email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://wa.me/7348619567" class="social-icon whatsapp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.instagram.com/iamrajender9567/" class="social-icon instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajender-mohan-verma-10418432a/" class="social-icon linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://t.me/+S5b31eTh48llMzJl" class="social-icon telegram" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://x.com/Rajendermv7800" class="social-icon x" title="X">
+                            <i class="fab fa-x"></i>
+                            <span>X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 position-relative">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">© 2025 Python Quiz. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://x.com/Rajendermv7800"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/RajenderMohan"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajender-mohan-verma-10418432a/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <button id="scrollToTop" class="btn btn-primary rounded-circle position-absolute end-0 bottom-0 m-3" style="width: 50px; height: 50px;">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/enhancements.js"></script>
+</body>
+</html>

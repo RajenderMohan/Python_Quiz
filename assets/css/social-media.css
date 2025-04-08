@@ -1,0 +1,206 @@
+:root {
+    --python-blue: #3776ab;
+    --python-yellow: #ffd43b;
+    --python-dark: #306998;
+    --python-light: #ffed99;
+}
+
+/* Social Media Grid Styles */
+.social-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.5rem;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    color: var(--python-dark);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: white;
+    border-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.social-icon:hover::before {
+    left: 100%;
+}
+
+.social-icon span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--python-dark);
+    margin-top: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.social-icon:hover span {
+    transform: translateY(-3px);
+    color: var(--python-blue);
+}
+
+.social-icon i {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    color: white;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.social-icon:hover i {
+    animation: pulse 1s infinite alternate;
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.social-icon i::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.social-icon:hover i::after {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.social-icon span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Platform Brand Colors with Glow Effects */
+.social-icon.email i {
+    background-color: #D44638;
+    box-shadow: 0 0 15px rgba(212, 70, 56, 0.4);
+}
+
+.social-icon.whatsapp i {
+    background-color: #25D366;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+}
+
+.social-icon.instagram i {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 0 15px rgba(188, 24, 136, 0.4);
+}
+
+.social-icon.facebook i {
+    background-color: #1877F2;
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.4);
+}
+
+.social-icon.linkedin i {
+    background-color: #0A66C2;
+    box-shadow: 0 0 15px rgba(10, 102, 194, 0.4);
+}
+
+.social-icon.telegram i {
+    background-color: #26A5E4;
+    box-shadow: 0 0 15px rgba(38, 165, 228, 0.4);
+}
+
+.social-icon.x i {
+    background-color: #000000;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 2px;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-icon:hover i {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .social-media-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .social-icon {
+        padding: 1rem 0.3rem;
+    }
+
+    .social-icon i {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .social-icon span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .social-icon {
+        padding: 0.8rem 0.2rem;
+    }
+}

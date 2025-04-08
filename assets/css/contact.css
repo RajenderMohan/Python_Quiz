@@ -1,0 +1,90 @@
+/* Contact Page Styles */
+.platform-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.platform-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.platform-content h4 {
+    color: #306998;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.platform-content p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.platform-hover {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    background: #3776ab;
+    color: white;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platform-card:hover .platform-hover {
+    bottom: 0;
+}
+
+.platform-card:hover .platform-icon {
+    transform: scale(1.1);
+}
+
+/* Platform-specific colors */
+.email-card .platform-icon {
+    color: #D44638;
+}
+
+.whatsapp-card .platform-icon {
+    color: #25D366;
+}
+
+.phone-card .platform-icon {
+    color: #0A66C2;
+}
+
+.email-card .platform-hover {
+    background: #D44638;
+}
+
+.whatsapp-card .platform-hover {
+    background: #25D366;
+}
+
+.phone-card .platform-hover {
+    background: #0A66C2;
+}
+
+.platform-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}

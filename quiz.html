@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz Challenge</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .option-btn.correct {
+            background-color: #d1fae5;
+            border-color: #34d399;
+        }
+        .option-btn.incorrect {
+            background-color: #fee2e2;
+            border-color: #f87171;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <!-- Quiz Header -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h1 class="text-3xl font-bold">Python Quiz Challenge</h1>
+                        <p class="text-blue-100">Test your Python knowledge</p>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <div class="text-center">
+                            <p class="text-sm text-blue-200">Question</p>
+                            <p class="text-xl font-bold"><span id="question-number">1</span>/<span id="total-questions">0</span></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-sm text-blue-200">Score</p>
+                            <p class="text-xl font-bold" id="score">0</p>
+                        </div>
+                        <div class="bg-white/20 rounded-full px-4 py-2">
+                            <span id="timer" class="font-bold">30s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="h-1.5 bg-gray-200">
+                <div id="progress-bar" class="h-full bg-blue-500 transition-all duration-300" style="width:0%"></div>
+            </div>
+
+            <!-- Quiz Content -->
+            <div class="p-8">
+                <div id="question-container" class="mb-8">
+                    <h2 id="question" class="text-2xl font-bold text-gray-800 mb-6"></h2>
+                    <div id="options" class="grid gap-3"></div>
+                </div>
+
+                <!-- Feedback Section -->
+                <div id="feedback" class="hidden mb-8 p-4 rounded-lg border-l-4 border-blue-500 bg-blue-50"></div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between items-center">
+                    <button id="prev-btn" class="flex items-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-5 rounded-lg transition hidden">
+                        <i class="fas fa-arrow-left mr-2"></i> Previous
+                    </button>
+                    <button id="next-btn" class="flex items-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 rounded-lg transition shadow-md">
+                        Next <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-8">
+            <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                <i class="fas fa-home mr-2"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+     <!-- Audio Elements -->
+    <audio id="correct-sound" src="assets/audio/correct.mp3"></audio>
+    <audio id="incorrect-sound" src="assets/audio/incorrect.mp3"></audio>
+    <audio id="warning-sound" src="assets/audio/warning.mp3"></audio>
+
+    <!-- JavaScript -->
+    <script type="module">
+        import { playCorrectSound, playIncorrectSound, playWarningSound } from './assets/js/audio-utils.js';
+        window.playCorrectSound = playCorrectSound;
+        window.playIncorrectSound = playIncorrectSound;
+        window.playWarningSound = playWarningSound;
+    </script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>

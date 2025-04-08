@@ -1,0 +1,710 @@
+[
+    {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+            "func",
+            "define",
+            "def",
+            "function"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "In Python, the 'def' keyword is used to define functions. Example: def my_function():"
+    },
+    {
+        "question": "What is the output of: print(3 * 'abc')?",
+        "options": [
+            "abcabcabc",
+            "3abc",
+            "abc, abc, abc",
+            "Error"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "In Python, the * operator with strings performs repetition. 'abc' * 3 concatenates the string 'abc' three times, resulting in 'abcabcabc'."
+    },
+    {
+        "question": "Which of these is NOT a valid Python data type?",
+        "options": [
+            "tuple",
+            "list",
+            "array",
+            "dictionary"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "While Python has lists, tuples and dictionaries as built-in data types, 'array' is not a built-in type. Arrays are available through the array module but need to be imported explicitly."
+    },
+    {
+        "question": "How do you start a while loop in Python?",
+        "options": [
+            "while condition:",
+            "while (condition)",
+            "while {condition}",
+            "while condition then"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Python while loops use the syntax 'while condition:' followed by an indented block. Parentheses or braces are not required around the condition."
+    },
+    {
+        "question": "What does the 'pass' statement do?",
+        "options": [
+            "Terminates the program",
+            "Does nothing (placeholder)",
+            "Skips current iteration",
+            "Continues to next statement"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The pass statement is a null operation - it does nothing. It's used as a placeholder when syntax requires a statement but no action is needed, often in empty functions or classes."
+    },
+    {
+        "question": "Which module is used for working with regular expressions?",
+        "options": [
+            "regex",
+            "re",
+            "pyre",
+            "pattern"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The 're' module provides regular expression matching operations similar to those found in Perl. It's Python's built-in module for regex operations."
+    },
+    {
+        "question": "How do you create a virtual environment in Python?",
+        "options": [
+            "python create venv",
+            "python -m venv env",
+            "python virtual env",
+            "python setup venv"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The correct command is 'python -m venv env' where 'env' is your environment name. This creates an isolated Python environment with its own installation directories."
+    },
+    {
+        "question": "What is the correct way to open a file for reading?",
+        "options": [
+            "open('file.txt', 'read')",
+            "open('file.txt', 'r')",
+            "open('file.txt', 'readonly')",
+            "open('file.txt')"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The correct mode is 'r' for reading. While omitting the mode defaults to 'r', explicitly specifying it makes the code clearer. 'read' and 'readonly' are invalid modes."
+    },
+    {
+        "question": "Which operator is used for exponentiation?",
+        "options": [
+            "^",
+            "**",
+            "^^",
+            "*^"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Python uses ** for exponentiation (e.g., 2**3 = 8). The ^ operator is bitwise XOR, not exponentiation."
+    },
+    {
+        "question": "What does the __init__ method do?",
+        "options": [
+            "Initializes a module",
+            "Initializes class attributes",
+            "Imports all dependencies",
+            "Starts the program"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "__init__ is a special method called when an object is instantiated. It initializes the object's attributes and is Python's constructor equivalent."
+    },
+    {
+        "question": "What is the correct syntax to create a Python list?",
+        "options": [
+            "list = [1, 2, 3]",
+            "list = (1, 2, 3)",
+            "list = {1, 2, 3}",
+            "list = <1, 2, 3>"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Lists are created using square brackets []. The other options create different types: () makes a tuple, {} makes a set/dictionary, and <> is invalid syntax for list creation."
+    },
+    {
+        "question": "Which method removes and returns the last item from a list?",
+        "options": [
+            "remove()",
+            "pop()",
+            "delete()",
+            "cut()"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The pop() method removes and returns the last item by default. remove() deletes by value, delete isn't a list method, and cut() doesn't exist in Python."
+    },
+    {
+        "question": "What does the 'yield' keyword do?",
+        "options": [
+            "Returns a value from function",
+            "Creates a generator function",
+            "Pauses function execution",
+            "All of the above"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "yield does all three: returns a value, makes the function a generator that can be iterated, and pauses execution until next value is requested."
+    },
+    {
+        "question": "How do you check if a key exists in a dictionary?",
+        "options": [
+            "key in dict",
+            "dict.has_key(key)",
+            "dict.exists(key)",
+            "dict.contains(key)"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "The 'in' operator is the modern, preferred way (key in dict). has_key() is deprecated in Python 3, and the other methods don't exist."
+    },
+    {
+        "question": "What is the output of: print(bool('False'))?",
+        "options": [
+            "False",
+            "True",
+            "None",
+            "Error"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Any non-empty string is True in Python, even 'False'. Only empty strings evaluate to False in boolean context."
+    },
+    {
+        "question": "Which decorator is used for class methods?",
+        "options": [
+            "@method",
+            "@staticmethod",
+            "@classmethod",
+            "@function"
+        ],
+        "answer": 2,
+        "difficulty": "hard",
+        "explanation": "@classmethod is used for class methods that receive the class (cls) as first argument. @staticmethod doesn't receive any special first argument."
+    },
+    {
+        "question": "What does the 'super()' function do?",
+        "options": [
+            "Calls parent class methods",
+            "Creates superclass",
+            "Imports all parent methods",
+            "Makes class inherit all attributes"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "super() returns a proxy object that delegates method calls to parent class. It's essential for proper method resolution in inheritance."
+    },
+    {
+        "question": "Which module would you use for date manipulation?",
+        "options": [
+            "time",
+            "date",
+            "datetime",
+            "calendar"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "The datetime module provides classes for manipulating dates and times. time deals with time-related functions, calendar handles calendar operations."
+    },
+    {
+        "question": "What is the correct way to handle exceptions?",
+        "options": [
+            "try/except",
+            "try/catch",
+            "error/handle",
+            "exception/handle"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Python uses try/except blocks for exception handling. try/catch is from other languages like Java, the other options are invalid."
+    },
+    {
+        "question": "Which of these is immutable?",
+        "options": [
+            "list",
+            "dictionary",
+            "tuple",
+            "set"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Tuples are immutable sequences in Python. Lists, dictionaries and sets are mutable (can be changed after creation)."
+    },
+    {
+        "question": "What does 'if __name__ == '__main__':' do?",
+        "options": [
+            "Checks if script is imported",
+            "Checks if script is run directly",
+            "Both of the above",
+            "None of the above"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "This idiom checks if the script is being run directly (not imported). Code under this block executes only when the script is run directly."
+    },
+    {
+        "question": "Which function creates a sequence of numbers?",
+        "options": [
+            "seq()",
+            "range()",
+            "numbers()",
+            "sequence()"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "range() generates a sequence of numbers. seq() and sequence() don't exist, numbers() isn't a built-in sequence generator."
+    },
+    {
+        "question": "What is the output of: print(1 + 2 * 3 ** 2)?",
+        "options": [
+            "19",
+            "27",
+            "9",
+            "21"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "Follows operator precedence: 3**2=9, 2*9=18, 1+18=19. ** has highest precedence, then *, then +."
+    },
+    {
+        "question": "Which is NOT a valid variable name?",
+        "options": [
+            "_var",
+            "var1",
+            "1var",
+            "var_one"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Variable names cannot start with numbers. Valid names can start with letters/underscores and contain letters, numbers and underscores."
+    },
+    {
+        "question": "What does the 'break' statement do?",
+        "options": [
+            "Exits the program",
+            "Exits the current loop",
+            "Skips current iteration",
+            "Continues to next statement"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "break exits the innermost loop completely. To exit just the current iteration, use 'continue'. To exit the program, use sys.exit()."
+    },
+    {
+        "question": "Which is the correct way to import only sqrt from math?",
+        "options": [
+            "import sqrt from math",
+            "from math import sqrt",
+            "import math.sqrt",
+            "include math.sqrt"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Python uses 'from module import name' syntax for specific imports. The other options use incorrect syntax or keywords."
+    },
+    {
+        "question": "What is the type of: type(lambda x: x)?",
+        "options": [
+            "function",
+            "lambda",
+            "type",
+            "object"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "Lambda functions are of type 'function' in Python. 'lambda' is the keyword to create them, not their type."
+    },
+    {
+        "question": "Which is used to document functions?",
+        "options": [
+            "comments",
+            "docstrings",
+            "annotations",
+            "metadata"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Docstrings (triple-quoted strings right after def) are the standard way to document functions. Comments are for code, annotations for type hints."
+    },
+    {
+        "question": "What does list[::-1] do?",
+        "options": [
+            "Reverses the list",
+            "Creates a copy",
+            "Removes last element",
+            "Returns empty list"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "The slice [::-1] means: start at beginning, go to end, with step -1 (backwards). This efficiently reverses any sequence."
+    },
+    {
+        "question": "Which is NOT a Python built-in function?",
+        "options": [
+            "print()",
+            "input()",
+            "echo()",
+            "len()"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "echo() is not a Python built-in - it comes from other languages like PHP. print(), input() and len() are all Python built-ins."
+    },
+    {
+        "question": "What is the output of: print(round(3.14159, 2))?",
+        "options": [
+            "3.14",
+            "3.141",
+            "3.142",
+            "3.14159"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "round() with 2 decimal places rounds 3.14159 to 3.14 (digits 1-4 round down, 5-9 round up). Note it returns 3.14 but displays as 3.14 due to float representation."
+    },
+    {
+        "question": "Which is used to iterate over two lists simultaneously?",
+        "options": [
+            "zip()",
+            "map()",
+            "enumerate()",
+            "iter()"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "zip() pairs elements from multiple iterables. map() applies a function, enumerate() adds indexes, iter() makes an iterator from one iterable."
+    },
+    {
+        "question": "What does the 'any()' function do?",
+        "options": [
+            "Checks if all elements are True",
+            "Checks if any element is True",
+            "Returns all elements",
+            "Returns any random element"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "any() returns True if any element in the iterable is true. For 'all elements', use all(). It doesn't return elements themselves."
+    },
+    {
+        "question": "Which is the correct way to create a set?",
+        "options": [
+            "{1, 2, 3}",
+            "[1, 2, 3]",
+            "(1, 2, 3)",
+            "set(1, 2, 3)"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Sets use curly braces {}. [] creates a list, () a tuple. set() constructor exists but takes one iterable argument, not multiple numbers."
+    },
+    {
+        "question": "What is the output of: print('Hello'.upper())?",
+        "options": [
+            "hello",
+            "HELLO",
+            "Hello",
+            "hELLO"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "upper() converts all characters in a string to uppercase. The original string 'Hello' becomes 'HELLO'. lower() would convert to lowercase."
+    },
+    {
+        "question": "Which is used to measure code execution time?",
+        "options": [
+            "timeit",
+            "timer",
+            "clock",
+            "stopwatch"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "The timeit module provides simple ways to time small bits of Python code. It avoids common timing pitfalls and provides accurate measurements."
+    },
+    {
+        "question": "What does the 'with' statement do?",
+        "options": [
+            "Creates context manager",
+            "Defines a block",
+            "Both of the above",
+            "None of the above"
+        ],
+        "answer": 2,
+        "difficulty": "hard",
+        "explanation": "The with statement both creates a runtime context (via context manager protocol) and defines a block where that context is active. Commonly used for resource management."
+    },
+    {
+        "question": "Which is NOT a Python logical operator?",
+        "options": [
+            "and",
+            "or",
+            "not",
+            "xor"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "Python's logical operators are 'and', 'or', and 'not'. 'xor' is a bitwise operator (^), not a logical one."
+    },
+    {
+        "question": "What is the output of: print(10 // 3)?",
+        "options": [
+            "3",
+            "3.333",
+            "3.0",
+            "4"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "The // operator performs floor division, returning the largest integer less than or equal to the result. 10 divided by 3 is 3.333..., which floors to 3."
+    },
+    {
+        "question": "Which is used to create an abstract class?",
+        "options": [
+            "ABC",
+            "abstract",
+            "AbstractClass",
+            "abstractmethod"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "The ABC class from the abc module is used to create abstract base classes. The @abstractmethod decorator marks methods as abstract, but ABC is needed for the base class."
+    },
+    {
+        "question": "What does the 'globals()' function return?",
+        "options": [
+            "Global variables dictionary",
+            "List of global functions",
+            "All imported modules",
+            "Global constants"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "globals() returns a dictionary representing the current global symbol table, containing all global variables, functions, and classes (not just constants)."
+    },
+    {
+        "question": "Which is used to parse command line arguments?",
+        "options": [
+            "argparse",
+            "cmdparse",
+            "sys.argv",
+            "Both 1 and 3"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "Both argparse (for complex parsing) and sys.argv (for simple access) are used. argparse is preferred for most applications, while sys.argv provides direct access to raw arguments."
+    },
+    {
+        "question": "What is the output of: print('Python'[1:4])?",
+        "options": [
+            "yth",
+            "Pyt",
+            "thon",
+            "ytho"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "String slicing [1:4] takes characters from index 1 (inclusive) to 4 (exclusive). 'Python' indexes are P(0), y(1), t(2), h(3), o(4), n(5), so [1:4] is 'yth'."
+    },
+    {
+        "question": "Which is used to make a shallow copy of a list?",
+        "options": [
+            "list.copy()",
+            "list[:]",
+            "copy.copy(list)",
+            "All of above"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "All three methods create shallow copies: list.copy() (Python 3.3+), slicing list[:], and copy.copy(). Shallow copies duplicate the container but not contained objects."
+    },
+    {
+        "question": "What does the 'hash()' function do?",
+        "options": [
+            "Returns object's hash value",
+            "Creates hash table",
+            "Encrypts data",
+            "Compresses data"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "hash() returns the hash value of an object if it has one. Hash values are integers used to quickly compare dictionary keys. It doesn't create tables or modify data."
+    },
+    {
+        "question": "Which is used to measure memory usage?",
+        "options": [
+            "sys.getsizeof()",
+            "memory.size()",
+            "obj.size",
+            "mem.usage()"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "sys.getsizeof() returns the size of an object in bytes. The other options are not valid Python functions. Note this only measures the object itself, not referenced objects."
+    },
+    {
+        "question": "What is the output of: print(0.1 + 0.2 == 0.3)?",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "answer": 1,
+        "difficulty": "hard",
+        "explanation": "Due to floating-point precision limitations, 0.1 + 0.2 equals approximately 0.30000000000000004, not exactly 0.3. This is a common gotcha in many programming languages."
+    },
+    {
+        "question": "Which is used to create a namespace package?",
+        "options": [
+            "__namespace__",
+            "__init__.py",
+            "setup.py",
+            "PEP 420"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "PEP 420 describes native namespace packages in Python 3.3+. These don't require __init__.py files and allow splitting packages across multiple directories."
+    },
+    {
+        "question": "What does the 'ord()' function do?",
+        "options": [
+            "Returns Unicode code point",
+            "Orders a list",
+            "Creates ordinal numbers",
+            "Organizes dictionary"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "ord() takes a single Unicode character and returns its integer code point. For example, ord('A') returns 65. The inverse function is chr()."
+    },
+    {
+        "question": "Which is used to create a decorator with arguments?",
+        "options": [
+            "Nested functions",
+            "Decorator factory",
+            "Class decorator",
+            "All of above"
+        ],
+        "answer": 1,
+        "difficulty": "hard",
+        "explanation": "A decorator factory is a function that returns a decorator, allowing parameterization. The pattern is: def decorator_factory(args): def decorator(func): ... return decorator"
+    },
+    {
+        "question": "What is the output of: print([i for i in range(5) if i%2])?",
+        "options": [
+            "[0,2,4]",
+            "[1,3]",
+            "[1,3,5]",
+            "[0,1,2,3,4]"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "This list comprehension includes numbers from range(5) (0-4) where i%2 is truthy (1 for odd numbers). So it includes 1 and 3."
+    },
+    {
+        "question": "Which is used to profile Python code?",
+        "options": [
+            "cProfile",
+            "profile",
+            "timeit",
+            "All of above"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "All are profiling tools: cProfile (C-based, recommended), profile (pure Python), timeit (for small code snippets). cProfile is most commonly used for full program profiling."
+    },
+    {
+        "question": "What does the 'frozenset()' function do?",
+        "options": [
+            "Creates immutable set",
+            "Freezes a set",
+            "Both of above",
+            "None of above"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "frozenset() creates an immutable set that can be used as dictionary key or in other sets. It's both a creation function and conceptually 'freezes' a regular set."
+    },
+    {
+        "question": "Which is used to create a metaclass?",
+        "options": [
+            "type",
+            "metaclass",
+            "__metaclass__",
+            "All of above"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "Metaclasses are created by subclassing 'type'. While '__metaclass__' was used in Python 2, in Python 3 you specify metaclass=MyMeta in class definition."
+    },
+    {
+        "question": "What is the output of: print(''.join(reversed('Python')))?",
+        "options": [
+            "nohtyP",
+            "Pythno",
+            "Python",
+            "Error"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "reversed() returns an iterator of characters in reverse order, and join() combines them into a string. 'Python' reversed is 'nohtyP'."
+    },
+    {
+        "question": "Which is used to create a thread pool?",
+        "options": [
+            "concurrent.futures",
+            "threading",
+            "multiprocessing",
+            "All of above"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "concurrent.futures.ThreadPoolExecutor provides high-level thread pools. While threading can create threads directly, it doesn't provide pool management."
+    },
+    {
+        "question": "What does the 'vars()' function do?",
+        "options": [
+            "Returns __dict__ attribute",
+            "Lists all variables",
+            "Both of above",
+            "None of above"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "vars() returns the __dict__ attribute of an object (module, class, instance). Without arguments, it acts like locals(), but doesn't technically 'list all variables'."
+    },
+    {
+        "question": "Which is used to create a coroutine?",
+        "options": [
+            "async/await",
+            "yield",
+            "generator",
+            "All of above"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "All can create coroutine-like behavior: async/await for native coroutines, yield for generator-based coroutines (older style), and generators themselves can behave similarly."
+    },
+    {
+        "question": "What is the output of: print(2 + 2 == 5)?",
+        "options": [
+            "True",
+            "False",
+            "Error",
+            "None"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The expression evaluates to False since 2+2 is 4, not 5. This is a basic boolean comparison showing how == works in Python."
+    }
+]
